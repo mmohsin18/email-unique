@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Extractor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Email Extractor</h1>
+    <p>Upload CSV files or drag & drop to extract unique email addresses.</p>
+  </header>
+
+  <main class="container">
+    <!-- Left column -->
+    <section class="left-panel">
+      <input type="file" id="csvInput" accept=".csv" multiple />
+      <div id="dropZone">or drag & drop CSV files here</div>
+    </section>
+
+    <!-- Right column -->
+    <section class="right-panel">
+      <label for="emailTextarea">Unique Emails</label>
+      <textarea id="emailTextarea" readonly></textarea>
+      <div id="bottomCont">
+        <p id="bottomp"></p>
+        <button id="downloadBtn">Download CSV</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

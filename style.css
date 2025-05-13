@@ -1,0 +1,120 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #111;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+p {
+  color: #555;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left panel */
+.left-panel {
+  flex: 1;
+  min-width: 280px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+}
+
+#dropZone {
+  border: 2px dashed #ccc;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  font-size: 1rem;
+  color: #666;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+#dropZone:hover {
+  border-color: #888;
+  background-color: #f0f0f0;
+}
+
+/* Right panel */
+.right-panel {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+textarea {
+  flex: 1;
+  min-height: 300px;
+  resize: none;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Download button */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#bottomCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
